@@ -1,0 +1,185 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0
+}
+
+#section1 {
+    background-color: rgb(5, 37, 69);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  align-items: center;
+}
+
+
+#section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 50px;
+  background: #f9f9f9;
+}
+
+#leyenda {
+  font-size: 3rem;
+  max-width: 90%;
+  white-space: pre-wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#section3{
+padding-bottom: 100px;
+}
+
+article {
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  align-items: center;
+}
+
+
+
+
+#section4 {
+  background: rgb(5, 37, 69);
+  color: white;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+#section4 h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+#countdown {
+  display: flex;
+  gap: 40px;
+}
+
+.time-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.time-box span {
+  font-size: 3rem;
+  font-weight: bold;
+  display: block;
+}
+
+.time-box p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FLIPCARD  */
+
+
+
+.flip-card {
+    background-color: transparent;
+    width: 500px;
+    height: 500px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    margin-top: 100px;
+    /* Remove this if you don't want the 3D effect */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 20px; /* 🔹 redondeo general */
+
+}
+
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+    border-radius: 20px; /* 🔹 redondeo general */
+}
+
+
+.flip-card-front img{
+    max-width: 100%;
+    max-height: 100%;
+object-fit: fill;
+border-radius: 20px; /* 🔹 redondeo general */
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color: rgb(5, 37, 69);
+    color: white;
+    transform: rotateY(180deg);
+}
