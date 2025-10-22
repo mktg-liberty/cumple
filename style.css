@@ -182,4 +182,115 @@ border-radius: 20px; /* 🔹 redondeo general */
     background-color: rgb(5, 37, 69);
     color: white;
     transform: rotateY(180deg);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CELULAR */
+@media (max-width: 767px) {
+
+  body {
+    font-size: 14px;
+  }
+
+  #section1 {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  #logo img {
+    width: 70%;
+    max-width: 300px;
+  }
+
+  #section2 {
+    padding: 30px 15px;
+  }
+
+  #leyenda {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  article {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flip-card {
+    width: 90%;
+    max-width: 320px;
+    height: 320px;
+    margin-top: 40px;
+  }
+
+  #section4 {
+    padding: 40px 15px;
+  }
+
+  #section4 h2 {
+    font-size: 1.8rem;
+  }
+
+  #countdown {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .time-box span {
+    font-size: 2rem;
+  }
+
+  .time-box p {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+/* TABLETS */
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  #leyenda {
+    font-size: 2rem;
+    max-width: 80%;
+  }
+
+  .flip-card {
+    width: 45%;
+    max-width: 400px;
+    height: 400px;
+    margin-top: 60px;
+  }
+
+  #countdown {
+    gap: 30px;
+  }
+
+  .time-box span {
+    font-size: 2.5rem;
+  }
+
+}
+
+
+
+
+/* COMPU */
+@media (min-width: 1200px) {
+  #leyenda {
+    font-size: 3rem;
+  }
 }
