@@ -186,7 +186,31 @@ border-radius: 20px; /* 🔹 redondeo general */
 }
 
 
+.cajita {
+  box-sizing: border-box;
+  padding: 20px;
+  overflow-y: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  word-break: break-word; /* 🔹 fuerza salto dentro de palabras largas */
+}
 
+.cajita h1 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.cajita p {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 5px 0;
+  word-break: break-word; /* 🔹 evita que las letras largas salgan del contenedor */
+  white-space: normal; /* 🔹 asegura que haga saltos de línea */
+}
 
 
 
@@ -294,3 +318,4 @@ border-radius: 20px; /* 🔹 redondeo general */
     font-size: 3rem;
   }
 }
+
