@@ -128,14 +128,14 @@ article {
     border: 1px solid #f1f1f1;
     perspective: 1000px;
     margin-top: 100px;
-    /* Remove this if you don't want the 3D effect */
+
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-        border-radius: 20px; /* 🔹 redondeo general */
+        border-radius: 20px; 
 
 }
 
 
-/* This container is needed to position the front and back side */
+
 .flip-card-inner {
     position: relative;
     width: 100%;
@@ -146,12 +146,12 @@ article {
     
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
+
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
 
-/* Position the front and back side */
+
 .flip-card-front,
 .flip-card-back {
     position: absolute;
@@ -160,7 +160,7 @@ article {
     -webkit-backface-visibility: hidden;
     /* Safari */
     backface-visibility: hidden;
-    border-radius: 20px; /* 🔹 redondeo general */
+    border-radius: 20px; 
 }
 
 
@@ -168,16 +168,16 @@ article {
     max-width: 100%;
     max-height: 100%;
 object-fit: fill;
-border-radius: 20px; /* 🔹 redondeo general */
+border-radius: 20px; 
 }
 
-/* Style the front side (fallback if image is missing) */
+
 .flip-card-front {
     background-color: #bbb;
     color: black;
 }
 
-/* Style the back side */
+
 .flip-card-back {
     background-color: rgb(5, 37, 69);
     color: white;
@@ -195,7 +195,7 @@ border-radius: 20px; /* 🔹 redondeo general */
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  word-break: break-word; /* 🔹 fuerza salto dentro de palabras largas */
+  word-break: break-word; 
 }
 
 .cajita h1 {
@@ -208,8 +208,8 @@ border-radius: 20px; /* 🔹 redondeo general */
   font-size: 1rem;
   line-height: 1.4;
   margin: 5px 0;
-  word-break: break-word; /* 🔹 evita que las letras largas salgan del contenedor */
-  white-space: normal; /* 🔹 asegura que haga saltos de línea */
+  word-break: break-word; 
+  white-space: normal; 
 }
 
 
@@ -318,4 +318,5 @@ border-radius: 20px; /* 🔹 redondeo general */
     font-size: 3rem;
   }
 }
+
 
