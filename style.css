@@ -212,13 +212,44 @@ border-radius: 20px;
 
 
 
-.precio{
+.precio {
+  position: relative;
+  padding: 15px 25px;
   border-radius: 25px;
-  border: aqua;
-  background-color: blueviolet;
-  width: fit-content;
-  text-align: center;
-  padding: 19px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: rgba(138, 43, 226, 0.2);
+  overflow: hidden;
+}
+
+.precio::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 25px;
+  background: linear-gradient(
+    90deg,
+    cyan,
+    rgb(37, 23, 228),
+    blue,
+    cyan
+  );
+  background-size: 300% 300%;
+  z-index: -1;
+  animation: borde-luz 3s linear infinite;
+}
+
+@keyframes borde-luz {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
 }
 
 
