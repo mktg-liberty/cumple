@@ -31,8 +31,27 @@ body {
   max-width: 90%;
   white-space: pre-wrap;
   font-weight: 800;
-color: rgb(5, 37, 69);
+  background: linear-gradient(
+    90deg,
+    rgb(5, 37, 69),
+    #009bdb,
+    rgb(5, 37, 69)
+  );
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: loopDegrade 6s linear infinite;
 }
+
+@keyframes loopDegrade {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
+}
+
 
 
 
@@ -372,6 +391,7 @@ border-radius: 20px;
   }
 
 }
+
 
 
 
