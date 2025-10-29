@@ -15,6 +15,8 @@ body {
 }
 
 
+
+
 #section2 {
   display: flex;
   justify-content: center;
@@ -28,6 +30,7 @@ body {
   font-size: 3rem;
   max-width: 90%;
   white-space: pre-wrap;
+  font-weight: 800;
 }
 
 
@@ -128,7 +131,6 @@ article {
     border: 1px solid #f1f1f1;
     perspective: 1000px;
     margin-top: 100px;
-
       transition: transform 0.3s ease, box-shadow 0.3s ease;
         border-radius: 20px; 
 
@@ -158,7 +160,6 @@ article {
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden;
-    /* Safari */
     backface-visibility: hidden;
     border-radius: 20px; 
 }
@@ -168,7 +169,7 @@ article {
     max-width: 100%;
     max-height: 100%;
 object-fit: fill;
-border-radius: 20px; 
+border-radius: 20px;
 }
 
 
@@ -177,44 +178,48 @@ border-radius: 20px;
     color: black;
 }
 
-
+/* Style the back side */
 .flip-card-back {
-    background-color: rgb(5, 37, 69);
-    color: white;
-    transform: rotateY(180deg);
-
+  background-color: rgb(5, 37, 69);
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+  border-radius: 20px;
 }
-
 
 .cajita {
   box-sizing: border-box;
+  width: 100%;
+  height: 100%;
   padding: 20px;
-  overflow-y: auto;
-  text-align: center;
+  overflow-y: auto; 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  word-break: break-word; 
+  text-align: center;
+  word-break: break-word;
 }
 
 .cajita h1 {
-  font-size: 1.4rem;
-  margin-bottom: 10px;
+  margin: 0 0 40px 0;
+  font-size: clamp(1rem, 2vw, 1.8rem); 
   line-height: 1.2;
 }
 
-.cajita p {
-  font-size: 1rem;
-  line-height: 1.4;
-  margin: 5px 0;
-  word-break: break-word; 
-  white-space: normal; 
+
+
+.precio{
+  border-radius: 25px;
+  border: aqua;
+  background-color: blueviolet;
+  width: fit-content;
+  text-align: center;
+  padding: 19px;
 }
-
-
-
-
 
 
 
@@ -299,6 +304,33 @@ border-radius: 20px;
     margin-top: 60px;
   }
 
+.cajita {
+  box-sizing: border-box;
+  padding: 20px;
+  overflow-y: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  word-break: break-word; 
+}
+
+.cajita h1 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.cajita p {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 5px 0;
+  word-break: break-word; 
+  white-space: normal;
+}
+
+
   #countdown {
     gap: 30px;
   }
@@ -310,13 +342,5 @@ border-radius: 20px;
 }
 
 
-
-
-/* COMPU */
-@media (min-width: 1200px) {
-  #leyenda {
-    font-size: 3rem;
-  }
-}
 
 
